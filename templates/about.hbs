@@ -1,0 +1,18 @@
+
+    <h1>About Dracula</h1>
+
+    <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, amet at atque cumque dolorem, ducimus eum fugit ipsa iusto numquam officia omnis optio quam, quidem quo quos sapiente sit velit.</span>
+        <span>Aliquam aliquid aperiam cumque deleniti doloremque eum ex exercitationem fuga ipsa nulla officiis placeat, quaerat, quod sapiente sed sunt ut velit. Consequuntur incidunt libero perferendis placeat unde? Alias, iure quaerat.</span>
+        <span>Animi architecto commodi, corporis doloribus labore mollitia? Corporis nam quam suscipit? Aliquid aspernatur cumque deleniti dolor ducimus magnam officia officiis, perspiciatis possimus quo quod rerum saepe suscipit vel veniam, voluptas?</span>
+        <span>Animi assumenda blanditiis consequatur consequuntur deserunt dolore dolores doloribus, dolorum, ducimus fugit incidunt laborum minus modi molestiae placeat possimus quia rerum similique sit voluptate. Doloribus eius officia placeat quam unde.</span>
+        <span>Culpa doloribus earum illum nesciunt nihil repellendus? A accusamus atque aut cumque iure non nostrum omnis quo sit ut! Autem dicta dolorem maiores unde vitae. Aliquam iusto quae tenetur vitae.</span>
+    </p>
+
+    <button class="btn btn-primary" {{action 'showRealName'}}>Click here to learn Dracula's real name!</button>
+
+    {{#if isPictureShowing}}
+        <button class="btn btn-info" {{action 'hidePicture'}}>Hide that scary face</button>
+        <p><img src="http://upload.wikimedia.org/wikipedia/commons/2/25/Dracula_1958_c.jpg" alt="A photo of Dracula"/></p>
+    {{else}}
+        <button class="btn btn-info" {{action 'showPicture'}}>Click here to see a picture</button>
+    {{/if}}
